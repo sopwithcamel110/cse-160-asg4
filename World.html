@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>KFC Factory</title>
+</head>
+
+<body onload="main()" onmousedown="funcShiftKey(event)">
+<canvas id="webgl" width="800" height="800">
+    Please use a browser that supports "canvas"
+</canvas>
+
+<p>
+<p id="perfmonitor">Loading</p>
+<p>
+<p>Sir Cluck sat by his self portrait, proud of what he had accomplished.</p>
+
+<p>
+    Light X<input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+    Light Y<input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideY">
+    Light Z<input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideZ">
+
+<p>
+    LightColor_R<input type="range" min="0" max="255" value="0" class="slider" id="L_C_S_R">
+    LightColor_G<input type="range" min="0" max="255" value="0" class="slider" id="L_C_S_G">
+    LightColor_B<input type="range" min="0" max="255" value="0" class="slider" id="L_C_S_B">
+
+<br>
+Light:
+<button type="button" id="lightOn">ON</button>
+<button type="button" id="lightOff">Off</button>
+Normal:
+<button type="button" id="normalOn">ON</button>
+<button type="button" id="normalOff">Off</button>
+<br>
+Lower Leg <input type="range" min="-10" max="10" value="0" class="slider" id="lowerLegSlide">
+<br>
+Thigh <input type="range" min="-6" max="6" value="0" class="slider" id="thighSlide">
+<br>
+Body <input type="range" min="-3" max="3" value="0" class="slider" id="bodyslide">
+<br>
+Head <input type="range" min="-3" max="3" value="0" class="slider" id="headslide">
+
+Animation:
+<button type="button" id="animationOn">ON</button>
+<button type="button" id="animationOff">OFF</button>
+
+<p>
+    Camera Angle <input type="range" min="0" max="360" value="5" class="slider" id="angleSlide">
+<p>
+
+<p>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+</body>
+</html>
